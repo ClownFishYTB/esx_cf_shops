@@ -72,6 +72,6 @@ AddEventHandler('esx_shops:buyItem', function(itemName, amount, zone)
 		end
 	else
 		local missingMoney = price - xPlayer.getMoney()
-		TriggerClientEvent('esx:showNotification', _source, "vous n\'avez ~r~pas assez~s~ d\'argent:" .. ESX.Math.GroupDigits(missingMoney)")
+		TriggerClientEvent('esx:showNotification', _source, "vous n\'avez ~r~pas assez~s~ d\'argent:" .. ESX.Math.GroupDigits(missingMoney))
 	end
 end)
